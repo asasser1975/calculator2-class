@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add new contact by filling out information below:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="person1">Name</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input id="phone" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Mailling address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="born">Date of birth:</label>
+              <input id="born" class="form-control" type="date">
+            </div>
+          </div>
+          <button type="submit" class="btn">Show me the story!</button>
+        </form>
+      </div>
+
+      <div id="story">
+        <h1>Summary of <span class="person1"></span> </h1>
+        <p>
+          <ul><span class="person1"></span><br></ul>
+          <ul><span class="phone"></span><br></ul>
+          <ul><span class="email"></span><br></ul>
+          <ul><span class="address"></span><br></ul>
+          <ul><span class="born"></span></ul>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
